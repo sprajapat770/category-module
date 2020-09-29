@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @var \Suraj\Category\Block\CategoryList $block;
+ */
+
+$categoryList = $block->getCategoryList();
+?>
+<p>Categories</p>
+<?php
+echo "<pre>";
+
+foreach ($categoryList as $category){
+    echo "<p>".$category->getName()."</p>";
+}
+echo "</pre>";?>
